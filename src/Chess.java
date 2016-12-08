@@ -16,7 +16,7 @@ public class Chess {
 		try{
 		gBoard.performMove(sc.nextLine());
 		}catch(Exception e){
-			System.out.println("Invalid move!");
+			System.out.println("Invalid-move!");
 			continue;
 		}
 		}

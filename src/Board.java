@@ -66,7 +66,7 @@ public class Board {
 		 System.out.println(Arrays.toString(rowLetters));
 		 for(int i = 0; i < board.length; i++)
 		 {
-		 System.out.println(Arrays.deepToString(board[i]));
+		 System.out.println(i+1 + " " + Arrays.deepToString(board[i]));
 		 }
 		}
 		
