@@ -20,4 +20,9 @@ public class Queen extends Piece{
 	{
 		return color.charAt(0) + "Q";
 	}
+	@Override
+	public boolean validateMove(Piece[][] board, int currX, int currY, int newX, int newY) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }

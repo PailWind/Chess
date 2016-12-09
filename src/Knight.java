@@ -35,4 +35,11 @@ public class Knight extends Piece{
 	{
 		return color.charAt(0) + "N";
 	}
+
+
+//	@Override
+//	public boolean validateMove() {
+//		// TODO Auto-generated method stub
+//		return false;
+//	}
 }

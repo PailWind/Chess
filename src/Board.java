@@ -59,16 +59,20 @@ public class Board {
 	{
 		//String[] rowLetters = {"a ", " b", "c ", "d ", "e ", "f ", "g ", "h "}; 
 		int[] moveAr = parseMove(move);
-		 board[moveAr[0]][moveAr[1]].setMoveCount();
-		 board[moveAr[2]][moveAr[3]] = board[moveAr[0]][moveAr[1]];
-		 board[moveAr[0]][moveAr[1]] = new EmptySpace();
-		// System.out.println(board[moveAr[2]][moveAr[3]].moveCount);
-		 System.out.println(Arrays.toString(rowLetters));
-		 for(int i = 0; i < board.length; i++)
-		 {
-		 System.out.println(i+1 + " " + Arrays.deepToString(board[i]));
-		 }
+		// board[moveAr[0]][moveAr[1]].setMoveCount();
+		if( board[moveAr[0]][moveAr[1]].validateMove(board, moveAr[1], moveAr[0], moveAr[3], moveAr[2]))
+		{
+			
+			 board[moveAr[2]][moveAr[3]] = board[moveAr[0]][moveAr[1]];
+			 board[moveAr[0]][moveAr[1]] = new EmptySpace();
+			// System.out.println(board[moveAr[2]][moveAr[3]].moveCount);
+			 System.out.println(Arrays.toString(rowLetters));
+			 for(int i = 0; i < board.length; i++)
+			 {
+			 System.out.println(i+1 + " " + Arrays.deepToString(board[i]));
+			 }
 		}
+	}
 		
 	public int[] parseMove(String move)
 	{

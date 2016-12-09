@@ -10,6 +10,8 @@ public abstract class Piece {
 	}
 	public abstract String getColor();
 	public abstract void setMoveCount();
+	public abstract boolean validateMove(
+			Piece[] [] board, int currX, int currY, int newX, int newY);
 	
 	
 	public void setColor(String color) {

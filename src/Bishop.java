@@ -19,4 +19,11 @@ public class Bishop extends Piece{
 	{
 		return color.charAt(0) + "B";
 	}
+
+	@Override
+	public boolean validateMove(
+			Piece[] [] board, int currX, int currY, int newX, int newY) {
+		
+		return false;
+	}
 }

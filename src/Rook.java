@@ -33,14 +33,11 @@ public class Rook extends Piece {
 			offset = -1;
 		}
 		
-		for(int i = currY; i < newY; i += offset){
+		for(int i = currY - offset; i < newY; i -= offset){
 			if (board[currX][i] != null){
 				return false;
 			}
 		}
-		
-		
-		
 		
 		return true;
 	}

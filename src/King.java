@@ -21,4 +21,11 @@ public class King extends Piece{
 	{
 		return color.charAt(0) + "K";
 	}
+
+
+	@Override
+	public boolean validateMove(Piece[][] board, int currX, int currY, int newX, int newY) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
