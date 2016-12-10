@@ -12,8 +12,7 @@ public class Chess {
 		Board gBoard = new Board();
 		for(int i = 0; i < 100; i++)
 		{
-		
-		System.out.println("Move: ");
+		System.out.println("Make a move: ");
 		move = sc.nextLine();
 			if(move.length() == 4)
 			{
